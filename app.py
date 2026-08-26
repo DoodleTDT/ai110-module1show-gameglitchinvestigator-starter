@@ -8,7 +8,7 @@ def get_range_for_difficulty(difficulty: str):
         return 1, 100
     if difficulty == "Hard":
         return 1, 50
-    return 1, 100
+    return 1, 100 #checking later
 
 
 def parse_guess(raw: str):
@@ -106,8 +106,9 @@ if "history" not in st.session_state:
 
 st.subheader("Make a guess")
 
+# FIX: Refactored the info message to include the correct number of attempts left
 st.info(
-    f"Guess a number between 1 and 100. "
+    f"Guess a number between {low} and {high}."
     f"Attempts left: {attempt_limit - st.session_state.attempts}"
 )
 
