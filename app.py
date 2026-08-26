@@ -1,6 +1,7 @@
 import random
 import streamlit as st
 
+# good to go
 def get_range_for_difficulty(difficulty: str):
     if difficulty == "Easy":
         return 1, 20
@@ -8,7 +9,7 @@ def get_range_for_difficulty(difficulty: str):
         return 1, 100
     if difficulty == "Hard":
         return 1, 50
-    return 1, 100 #checking later
+    return 1, 100
 
 
 def parse_guess(raw: str):
@@ -108,7 +109,7 @@ st.subheader("Make a guess")
 
 # FIX: Refactored the info message to include the correct number of attempts left
 st.info(
-    f"Guess a number between {low} and {high}."
+    f"Guess a number between {low} and {high}. "
     f"Attempts left: {attempt_limit - st.session_state.attempts}"
 )
 
@@ -132,9 +133,10 @@ with col2:
 with col3:
     show_hint = st.checkbox("Show hint", value=True)
 
+#FIX: Refactored the new game initialization to be based on the difficulty level
 if new_game:
     st.session_state.attempts = 0
-    st.session_state.secret = random.randint(1, 100)
+    st.session_state.secret = random.randint(low, high)
     st.success("New game started.")
     st.rerun()
 

@@ -17,8 +17,11 @@ Changing to a new game mode did not create a new game or change the range of num
 Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
+
 | | | | |
+
 | | | | |
+
 | | | | |
 
 ---
