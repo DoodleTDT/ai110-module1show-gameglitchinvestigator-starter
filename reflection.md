@@ -16,17 +16,18 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 
-| | | | |
+|Guess of 40 |Go Lower |Go Higher |Doesn't recognize the number it choose |
 
-| | | | |
+|Clicked new game |Restarts game attempts and number based on difficulty |Does nothing |Doesn't reset what it needs to |
 
-| | | | |
+|Game over |Main screen should show 0 attempts remaining |Shows 1 attempt remaining |Attempt script changes after the next attempt it submitted |
 
 ---
 
 ## 2. How did you use AI as a teammate?
 
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
+I used Claude to look over the code
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
