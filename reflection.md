@@ -29,8 +29,9 @@ Document at least 3 bugs you found. Add rows as needed.
 - Which AI tools did you use on this project (for example: ChatGPT, Gemini, Copilot)?
 I used Claude to look over the code
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
+I asked for an explanation in the code, and the AI told me that part of the code was randomly changing the inputs to string. That explained why the messages also changed on every guess. I deleted the unneccesary lines and only got the messages meant for interger guesses after that.
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
-
+When I asked why the range for numbers was always set to 1 to 100, the AI explained it through the difficulty, but only acknowledged Normal. I had to specify why the it didn't change for Easy and Hard, and it changed to fit the request. I made sure to specify those particular requests after.
 ---
 
 ## 3. Debugging and testing your fixes
