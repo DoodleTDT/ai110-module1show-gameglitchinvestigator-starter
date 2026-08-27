@@ -8,9 +8,7 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
-Guessing any number gave me the prompt "Go lower".
-Attempts to press new game did not work. Does not matter if I won or lost.
-Changing to a new game mode did not create a new game or change the range of numbers on the main prompt.
+Guessing any number gave me the prompt "Go lower". Attempts to press new game did not work. Does not matter if I won or lost. Changing to a new game mode did not create a new game or change the range of numbers on the main prompt.
 
 **Bug Reproduction Log**
 
