@@ -37,9 +37,12 @@ When I asked why the range for numbers was always set to 1 to 100, the AI explai
 ## 3. Debugging and testing your fixes
 
 - How did you decide whether a bug was really fixed?
+Since most of the bugs I fixed were logic based, I ran the game and played through to if that portion had been fixed. Sometimes when the AI had helped me fix the code, it would ask to run tests on what I had just fixed. When that happened, I didn't have to go to the game to test it, but I still would.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
+I didn't really know which part of the code was messing with the new game functions, so every time I fixed a likely candidate, I would run through the game. Manually playing the game again made me realize how many more errors there were. It's the main reason I kept doing it. It makes me become more thorough in my fixes.
 - Did AI help you design or understand any tests? How?
+After doing a few fixes in the code, I asked the AI to design tests based on the comments I left in the code. It asked if I wanted to refactor the app code to be testable, and I declined. Once the AI had written the test cases, I read through the tests to make sure I understood what it was testing.
 
 ---
 
