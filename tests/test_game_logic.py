@@ -214,10 +214,6 @@ def test_score_can_go_negative():
     assert update_score(current_score=0, outcome="Too Low", attempt_number=1) == -5
 
 
-@pytest.mark.xfail(
-    strict=True,
-    reason="GLITCH: 'Too High' on an even attempt increases the score.",
-)
 def test_wrong_guess_never_increases_score():
     for outcome in ("Too High", "Too Low"):
         for attempt_number in range(1, 9):
