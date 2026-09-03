@@ -49,15 +49,16 @@ After doing a few fixes in the code, I asked the AI to design tests based on the
 ## 4. What did you learn about Streamlit and state?
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
-
+Session states in Streamlit is a very convenient way to reset and store data. It's slower due to how it reads the whole Python file again, but it does help when statuses need to be changed back to normal. I'm still trying to figure out everything it does.
 ---
 
 ## 5. Looking ahead: your developer habits
 
 - What is one habit or strategy from this project that you want to reuse in future labs or projects?
   - This could be a testing habit, a prompting strategy, or a way you used Git.
-
+The habit of constantly commiting every change I make is a good one to have. I'm impressed that the AI can read those past commits to see what happened, and its helped me edit some of the tests. I am also learning how to be exact in my prompts to get what I'm looking for.
 - What is one thing you would do differently next time you work with AI on a coding task?
-
+I'm going to ask the AI to explain the code more than this time. I may have used that feature 3 times at most, when I could have done it more. Sometimes I thought I knew what the code was doing, but would later have to change it back after the AI looks over it.
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+I'm no longer skeptical about how AI is used in coding. The project allowed me to see how much the programmer still needs to be there to run things smoothly, and I appreciate that.
 
