@@ -25,19 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [ ] The game's function is to generate a random number that needs to be guessed by the user in a specific amount of turns.
+- [ ] Bugs include: New game button not restarting the program, points not being deducted correctly, games not being based on difficulty level, inaccurate hints, attempts not starting at 0.
+- [ ] Refactored game logic to the write file, fixed the new game button to restart the round, correct amount of points are given, new games start based on difficulty, hints are accurate to the guess and number, attempts start at 0, fixed text to match changes.
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User chooses thier game difficulty and presses new game
+2. User has a certain amount of turns to guess correctly
+3. A number too low is prompted with "Too Low"
+4. A number too high is prompted with "Too High"
+5. The score is updated with each guess
+6. User continues guessing until they win or lose
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 
@@ -45,9 +46,9 @@ Describe your fixed game in numbered steps so a reader can follow along without 
 
 ```
 # Paste your pytest output here, e.g.:
-# pytest tests/
-# ========================= X passed in 0.XXs =========================
-```
+
+........................................x...........                     [100%]
+51 passed, 1 xfailed in 0.25s
 
 ## 🚀 Stretch Features
 

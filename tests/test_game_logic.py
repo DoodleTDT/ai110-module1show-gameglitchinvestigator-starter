@@ -197,9 +197,9 @@ def test_too_low_subtracts_five():
     assert update_score(current_score=50, outcome="Too Low", attempt_number=3) == 45
 
 
-def test_too_high_on_even_attempt_adds_five():
-    # A wrong guess on an even-numbered attempt currently rewards the player.
-    assert update_score(current_score=50, outcome="Too High", attempt_number=2) == 55
+def test_too_high_on_even_attempt_subtracts_five():
+    # A wrong guess costs five points no matter which attempt it lands on.
+    assert update_score(current_score=50, outcome="Too High", attempt_number=2) == 45
 
 
 def test_too_high_on_odd_attempt_subtracts_five():
